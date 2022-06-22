@@ -31,7 +31,7 @@ if distro != "fedora":
 	print("Error: You are not on Fedora or your system is broken!")
 	exit(1)
 if version != VERSION:
-	print(f"Error: This script is made for Fedora {VERSION}")
+	print(f"Error: This script is made for Fedora {VERSION}!")
 	exit(1)
 
 
@@ -46,7 +46,7 @@ if os.geteuid() != 0:
 		print("Error: This program needs sudo privileges.")
 		exit(1)
 	subprocess.call(['sudo', 'python', *sys.argv])
-	exit()
+	exit(0)
 
 
 print("The program will continue here!")
