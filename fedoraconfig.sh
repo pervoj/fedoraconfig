@@ -12,9 +12,11 @@ extract="$dir/extract"
 [[ -d $dir ]] && rm -R $dir
 mkdir $dir $direx
 
+# download and extract files
 wget -qO $file $script
 unzip -q $file -d $extract
 
+# determine program path and run it
 rundir="$extract/$(ls $extract)"
 python $rundir
 
