@@ -42,7 +42,13 @@ if os.geteuid() != 0:
 		print()
 		print(_("Error: This program needs sudo privileges."))
 		exit(1)
-	subprocess.call(['sudo', 'python', *sys.argv])
+	print()
+	subprocess.call([
+		"sudo",
+		f"-p" + _("Please, enter your password: "),
+		"python",
+		*sys.argv
+	])
 	exit(0)
 
 
