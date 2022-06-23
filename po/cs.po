@@ -1,0 +1,53 @@
+# Czech translations for PACKAGE package.
+# Copyright (C) 2022 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2022.
+# Vojtěch Perník <translations@pervoj.cz>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fedoraconfig\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-23 07:55+0200\n"
+"PO-Revision-Date: 2022-06-23 07:59+0200\n"
+"Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"X-Generator: Gtranslator 42.0\n"
+
+#: main.py:12
+msgid "Error: File `/etc/os-release` not found!"
+msgstr "Chyba: Soubor `/etc/os-release` nebyl nalezen!"
+
+#: main.py:13
+msgid "       You are not on Fedora or your system is broken!"
+msgstr "       Nejste na Fedoře, nebo je váš systém rozbitý!"
+
+#: main.py:26
+msgid "Error: You are not on Fedora or your system is broken!"
+msgstr "Chyba: Nejste na Fedoře, nebo je váš systém rozbitý!"
+
+#: main.py:29
+#, python-brace-format
+msgid "Error: This script is made for Fedora {VERSION}!"
+msgstr "Chyba: Tento script je vytvořený pro Fedoru {VERSION}!"
+
+#: main.py:38
+msgid "This program needs sudo privileges."
+msgstr "Tento program potřebuje práva sudo."
+
+#: main.py:39
+msgid "We will ask you for your password."
+msgstr "Zeptáme se vás na vaše heslo."
+
+#: main.py:41
+msgid "Do you agree?"
+msgstr "Souhlasíte?"
+
+#: main.py:43
+msgid "Error: This program needs sudo privileges."
+msgstr "Chyba: Tento program potřebuje práva sudo."
