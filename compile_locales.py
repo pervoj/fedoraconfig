@@ -13,11 +13,12 @@ os.makedirs(MO)
 # list all locales
 with open(os.path.join(PO, "LINGUAS"), "r", encoding = "utf-8") as f:
 	for line in f.readlines():
-		if len(line) <= 0: continue
-		file = f"{line}.po"
+		language = line.strip()
+		if len(language) <= 0: continue
+		file = f"{language}.po"
 		# prepare paths
 		path_po = os.path.join(PO, file)
-		dir_mo = os.path.join(MO, file.replace(".po", ""), "LC_MESSAGES")
+		dir_mo = os.path.join(MO, language, "LC_MESSAGES")
 		path_mo = os.path.join(dir_mo, f"{GETTEXT_PACKAGE}.mo")
 		# create language directory in mo dir
 		os.makedirs(dir_mo)
