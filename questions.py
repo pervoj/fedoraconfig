@@ -1,9 +1,15 @@
+from gettext import gettext as _
+
 def yesno(question: str, defaultYes: bool = True) -> bool:
-	default = "Y/n"
-	if not defaultYes: default = "y/N"
+	# letter to use as "YES" answer
+	YES = _("y")
+	# letter to use as "NO" answer
+	NO = _("n")
+	default = f"{YES.upper()}/{NO.lower()}"
+	if not defaultYes: default = f"{YES.lower()}/{NO.upper()}"
 	while True:
 		answer = input(f"{question} [{default}] ").strip().lower()
 		if answer == "": return defaultYes
-		if answer == "y": return True
-		if answer == "n": return False
-		print("Invalid entry! Please, try again:")
+		if answer == YES.lower(): return True
+		if answer == NO.lower(): return False
+		print(_("Invalid entry! Please, try again:"))
