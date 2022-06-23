@@ -1,5 +1,7 @@
 from gettext import gettext as _
 from config import VERSION
+from functions import clear
+import colors
 import questions
 import os
 import subprocess
@@ -30,7 +32,7 @@ if version != VERSION:
 	exit(1)
 
 
-os.system("clear")
+clear()
 
 
 # if we don't have sudo privileges, run again with sudo
@@ -42,7 +44,16 @@ if os.geteuid() != 0:
 		print()
 		print(_("Error: This program needs sudo privileges."))
 		exit(1)
+	# inform user about typing feedback
+	clear()
+	print(colors.WARNING + _( # try to keep the text width under 80
+		"You probably won't see anything on your screen when you type in your password.\n"+
+		"Don't worry and keep typing. This behavior can be changed during the script."
+	) + colors.ENDC)
 	print()
+	input(_("Press Enter to continue…"))
+	# get the privileges
+	clear()
 	subprocess.call([
 		"sudo",
 		f"-p" + _("Please, enter your password: "),
