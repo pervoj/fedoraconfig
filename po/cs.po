@@ -54,7 +54,7 @@ msgstr "Chyba: Tento program potřebuje práva sudo."
 
 #: main.py:48
 msgid "Please, enter your password: "
-msgstr "Prosím, zadejte své heslo:"
+msgstr "Prosím, zadejte své heslo: "
 
 #. letter to use as "YES" answer
 #: questions.py:5
