@@ -1,23 +1,25 @@
-# Czech translations for PACKAGE package.
-# Copyright (C) 2022 THE PACKAGE'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2022.
-# Vojtěch Perník <translations@pervoj.cz>, 2022.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Vojtěch Perník <translations@pervoj.cz>, 2022
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: fedoraconfig\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-23 11:43+0200\n"
-"PO-Revision-Date: 2022-06-23 11:41+0200\n"
-"Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
-"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
-"Language: cs\n"
+"POT-Creation-Date: 2022-06-23 12:02+0200\n"
+"PO-Revision-Date: 2022-06-23 10:04+0000\n"
+"Last-Translator: Vojtěch Perník <translations@pervoj.cz>, 2022\n"
+"Language-Team: Czech (https://www.transifex.com/pervoj/teams/139688/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
-"X-Generator: Gtranslator 42.0\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
 #: main.py:14
 msgid "Error: File `/etc/os-release` not found!"
@@ -55,12 +57,10 @@ msgstr "Chyba: Tento program potřebuje práva sudo."
 #. try to keep the text width under 80
 #: main.py:50
 msgid ""
-"You probably won't see anything on your screen when you type in your "
-"password.\n"
+"You probably won't see anything on your screen when you type in your password.\n"
 "Don't worry and keep typing. This behavior can be changed during the script."
 msgstr ""
-"Při psaní vašeho hesla pravděpodobně na své obrazovce nic neuvidíte. Nebojte "
-"se\n"
+"Při psaní vašeho hesla pravděpodobně na své obrazovce nic neuvidíte. Nebojte se\n"
 "a pokračujte v psaní. Toto chování bude možno změnit v průběhu scriptu."
 
 #: main.py:54
