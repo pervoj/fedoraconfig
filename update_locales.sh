@@ -1,7 +1,9 @@
+gettext_package="fedoraconfig"
 template="po/template.pot"
 
 # generate pot file
 xgettext -f po/POTFILES -o $template
+sed -i "s/PACKAGE VERSION/fedoraconfig/g" $template
 
 languages=$(cat po/LINGUAS)
 for language in $languages
