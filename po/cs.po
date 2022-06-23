@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedoraconfig\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-23 07:55+0200\n"
-"PO-Revision-Date: 2022-06-23 07:59+0200\n"
+"POT-Creation-Date: 2022-06-23 08:22+0200\n"
+"PO-Revision-Date: 2022-06-23 08:24+0200\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -51,3 +51,17 @@ msgstr "Souhlasíte?"
 #: main.py:43
 msgid "Error: This program needs sudo privileges."
 msgstr "Chyba: Tento program potřebuje práva sudo."
+
+#. letter to use as "YES" answer
+#: questions.py:5
+msgid "y"
+msgstr "a"
+
+#. letter to use as "NO" answer
+#: questions.py:7
+msgid "n"
+msgstr "n"
+
+#: questions.py:15
+msgid "Invalid entry! Please, try again:"
+msgstr "Neplatný vstup! Prosím, zkuste to znovu:"
