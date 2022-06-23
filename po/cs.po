@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedoraconfig\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-23 11:09+0200\n"
-"PO-Revision-Date: 2022-06-23 11:10+0200\n"
+"POT-Creation-Date: 2022-06-23 11:43+0200\n"
+"PO-Revision-Date: 2022-06-23 11:41+0200\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -19,40 +19,55 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "X-Generator: Gtranslator 42.0\n"
 
-#: main.py:12
+#: main.py:14
 msgid "Error: File `/etc/os-release` not found!"
 msgstr "Chyba: Soubor `/etc/os-release` nebyl nalezen!"
 
-#: main.py:13
+#: main.py:15
 msgid "       You are not on Fedora or your system is broken!"
 msgstr "       Nejste na Fedoře, nebo je váš systém rozbitý!"
 
-#: main.py:26
+#: main.py:28
 msgid "Error: You are not on Fedora or your system is broken!"
 msgstr "Chyba: Nejste na Fedoře, nebo je váš systém rozbitý!"
 
-#: main.py:29
+#: main.py:31
 #, python-brace-format
 msgid "Error: This script is made for Fedora {VERSION}!"
 msgstr "Chyba: Tento script je vytvořený pro Fedoru {VERSION}!"
 
-#: main.py:38
+#: main.py:40
 msgid "This program needs sudo privileges."
 msgstr "Tento program potřebuje práva sudo."
 
-#: main.py:39
+#: main.py:41
 msgid "We will ask you for your password."
 msgstr "Zeptáme se vás na vaše heslo."
 
-#: main.py:41
+#: main.py:43
 msgid "Do you agree?"
 msgstr "Souhlasíte?"
 
-#: main.py:43
+#: main.py:45
 msgid "Error: This program needs sudo privileges."
 msgstr "Chyba: Tento program potřebuje práva sudo."
 
-#: main.py:48
+#. try to keep the text width under 80
+#: main.py:50
+msgid ""
+"You probably won't see anything on your screen when you type in your "
+"password.\n"
+"Don't worry and keep typing. This behavior can be changed during the script."
+msgstr ""
+"Při psaní vašeho hesla pravděpodobně na své obrazovce nic neuvidíte. Nebojte "
+"se\n"
+"a pokračujte v psaní. Toto chování bude možno změnit v průběhu scriptu."
+
+#: main.py:54
+msgid "Press Enter to continue…"
+msgstr "Pro pokračování stiskněte Enter…"
+
+#: main.py:59
 msgid "Please, enter your password: "
 msgstr "Prosím, zadejte své heslo: "
 
