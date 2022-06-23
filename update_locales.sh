@@ -1,5 +1,5 @@
 gettext_package="fedoraconfig"
-template="po/$gettext_package.pot"
+template="po/template.pot"
 
 # generate pot file
 xgettext -f po/POTFILES -o $template -c
@@ -17,3 +17,6 @@ do
 		fi
 	fi
 done
+
+# remove pot file
+rm $template
