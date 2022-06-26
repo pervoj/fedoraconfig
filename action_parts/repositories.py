@@ -1,6 +1,6 @@
 from gettext import gettext as _
 import os
-from questions import yesno, int_with_default
+from questions import yesno
 
 actions = []
 
