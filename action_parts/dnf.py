@@ -19,7 +19,7 @@ actions.append(parallel_downloads)
 
 def do_default_yes():
 	print(_("Enabling default yes in DNF…"))
-	os.system(f"sudo echo -e '\\ndefaultyes=True' >> /etc/dnf/dnf.conf")
+	os.system("sudo echo -e '\\ndefaultyes=True' >> /etc/dnf/dnf.conf")
 
 def default_yes():
 	if yesno(_("Set DNF default value to yes?"), False):
@@ -41,7 +41,7 @@ actions.append(fastest_mirror)
 
 def do_keep_cache():
 	print(_("Enabling default yes in DNF…"))
-	os.system(f"sudo echo -e '\\nkeepcache=True' >> /etc/dnf/dnf.conf")
+	os.system("sudo echo -e '\\nkeepcache=True' >> /etc/dnf/dnf.conf")
 
 def keep_cache():
 	if yesno(_("Keep DNF cache?"), False):
@@ -52,7 +52,7 @@ actions.append(keep_cache)
 
 def do_update():
 	print(_("Updating packages…"))
-	os.system(f"sudo dnf update -y > /dev/null 2>&1")
+	os.system("sudo dnf update -y > /dev/null 2>&1")
 
 def update():
 	if yesno(_("Update packages?"), True):
