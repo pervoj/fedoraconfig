@@ -15,4 +15,7 @@ except KeyboardInterrupt: print()
 
 try:
 	shutil.rmtree(join(PATH, "mo"))
+
+	shutil.rmtree(join(PATH, "__pycache__"))
+	shutil.rmtree(join(PATH, "action_parts", "__pycache__"))
 except FileNotFoundError: pass
