@@ -13,4 +13,6 @@ try:
 	import main
 except KeyboardInterrupt: print()
 
-shutil.rmtree(join(PATH, "mo"))
+try:
+	shutil.rmtree(join(PATH, "mo"))
+except FileNotFoundError: pass
