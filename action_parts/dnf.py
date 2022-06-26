@@ -40,7 +40,7 @@ actions.append(fastest_mirror)
 
 
 def do_keep_cache():
-	print(_("Enabling default yes in DNF…"))
+	print(_("Enabling DNF cache keeping…"))
 	os.system("sudo echo -e '\\nkeepcache=True' >> /etc/dnf/dnf.conf")
 
 def keep_cache():
