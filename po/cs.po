@@ -2,24 +2,24 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
-# Vojtěch Perník <translations@pervoj.cz>, 2022
-# 
-#, fuzzy
+# Vojtěch Perník <translations@pervoj.cz>, 2022.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: fedoraconfig\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-23 12:02+0200\n"
-"PO-Revision-Date: 2022-06-23 10:04+0000\n"
-"Last-Translator: Vojtěch Perník <translations@pervoj.cz>, 2022\n"
-"Language-Team: Czech (https://www.transifex.com/pervoj/teams/139688/cs/)\n"
+"POT-Creation-Date: 2022-06-26 19:42+0200\n"
+"PO-Revision-Date: 2022-06-26 19:43+0200\n"
+"Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: cs\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"X-Generator: Gtranslator 42.0\n"
 
 #: main.py:14
 msgid "Error: File `/etc/os-release` not found!"
@@ -57,10 +57,12 @@ msgstr "Chyba: Tento program potřebuje práva sudo."
 #. try to keep the text width under 80
 #: main.py:50
 msgid ""
-"You probably won't see anything on your screen when you type in your password.\n"
+"You probably won't see anything on your screen when you type in your "
+"password.\n"
 "Don't worry and keep typing. This behavior can be changed during the script."
 msgstr ""
-"Při psaní vašeho hesla pravděpodobně na své obrazovce nic neuvidíte. Nebojte se\n"
+"Při psaní vašeho hesla pravděpodobně na své obrazovce nic neuvidíte. Nebojte "
+"se\n"
 "a pokračujte v psaní. Toto chování bude možno změnit v průběhu scriptu."
 
 #: main.py:54
@@ -70,6 +72,14 @@ msgstr "Pro pokračování stiskněte Enter…"
 #: main.py:59
 msgid "Please, enter your password: "
 msgstr "Prosím, zadejte své heslo: "
+
+#: main.py:67
+msgid "Everything is done!"
+msgstr "Vše je hotovo!"
+
+#: main.py:68
+msgid "Thanks for using this script!"
+msgstr "Děkujeme za použití tohoto scriptu!"
 
 #. letter to use as "YES" answer
 #: questions.py:5
@@ -81,6 +91,100 @@ msgstr "a"
 msgid "n"
 msgstr "n"
 
-#: questions.py:15
+#: questions.py:15 questions.py:28 questions.py:36
 msgid "Invalid entry! Please, try again:"
 msgstr "Neplatný vstup! Prosím, zkuste to znovu:"
+
+#: run_actions.py:12
+msgid "[question {} of {}]"
+msgstr "[{}. otázka z {}]"
+
+#. try to keep the text width under 80
+#: run_actions.py:17
+msgid ""
+"If you don't know what the option means, just press Enter to select the "
+"default\n"
+"answer. The default answers are chosen to suit as many people as possible."
+msgstr ""
+"Pokud nevíte, co daná možnost znamená, stiskněte klávesu Enter a vyberte "
+"výchozí\n"
+"odpověď. Výchozí odpovědi jsou zvoleny tak, aby vyhovovaly co největšímu "
+"počtu\n"
+"lidí."
+
+#. try to keep the text width under 80
+#: run_actions.py:27
+msgid "Now wait a while until everything is ready."
+msgstr "Nyní chvíli počkejte, než bude vše hotové."
+
+#: action_parts/repositories.py:9
+msgid "Adding Flathub repository…"
+msgstr "Přidává se repozitář Flathub…"
+
+#: action_parts/repositories.py:13
+msgid "Add Flathub repository to be able to download more apps?"
+msgstr "Přidat repozitář Flathub, aby bylo možné stahovat více aplikací?"
+
+#: action_parts/repositories.py:20
+msgid "Adding RPM Fusion repository…"
+msgstr "Přidává se repozitář RPM Fusion…"
+
+#: action_parts/repositories.py:26
+msgid "Add RPM Fusion repository to be able to download more apps?"
+msgstr "Přidat repozitář RPM Fusion, aby bylo možné stahovat více aplikací?"
+
+#: action_parts/repositories.py:27
+msgid "Are you fine with non-free apps?"
+msgstr "Jste v pořádku s nesvobodnými aplikacemi?"
+
+#: action_parts/dnf.py:9
+msgid "Enabling more parallel downloads…"
+msgstr "Povoluje se více paralelních stahování…"
+
+#: action_parts/dnf.py:13
+msgid "Increase the count of maximal parallel downloads?"
+msgstr "Zvýšit počet maximálních paralelních stahování?"
+
+#: action_parts/dnf.py:14
+msgid "On which number you want to set the maximal count?"
+msgstr "Na jaké číslo chcete nastavit maximální počet?"
+
+#: action_parts/dnf.py:21
+msgid "Enabling default yes in DNF…"
+msgstr "Povoluje se výchozí ano v DNF…"
+
+#: action_parts/dnf.py:25
+msgid "Set DNF default value to yes?"
+msgstr "Nastavit výchozí hodnotu DNF na ano?"
+
+#: action_parts/dnf.py:32
+msgid "Enabling the fastest mirror…"
+msgstr "Povoluje se hledání nejrychlejšího zrcadla…"
+
+#: action_parts/dnf.py:36
+msgid "Automatically find the fastest mirror?"
+msgstr "Automaticky vyhledat nejrychlejší zrcadlo?"
+
+#: action_parts/dnf.py:43
+msgid "Enabling DNF cache keeping…"
+msgstr "Povoluje se uchovávání cache DNF…"
+
+#: action_parts/dnf.py:47
+msgid "Keep DNF cache?"
+msgstr "Ponechat cache DNF?"
+
+#: action_parts/dnf.py:54
+msgid "Updating packages…"
+msgstr "Aktualizují se balíčky…"
+
+#: action_parts/dnf.py:58
+msgid "Update packages?"
+msgstr "Aktualizovat balíčky?"
+
+#: action_parts/installs.py:9
+msgid "Installing multimedia codecs…"
+msgstr "Instalují se kodeky multimédií…"
+
+#: action_parts/installs.py:14
+msgid "Install multimedia codecs?"
+msgstr "Nainstalovat kodeky multimédií?"
