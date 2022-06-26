@@ -62,5 +62,7 @@ if os.geteuid() != 0:
 	])
 	exit(0)
 
+import run_actions
 
-print("The program will continue here!")
+print(_("Everything is done!"))
+print(_("Thanks for using this script!"))
