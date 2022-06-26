@@ -48,3 +48,14 @@ def keep_cache():
 		return do_keep_cache
 
 actions.append(keep_cache)
+
+
+def do_update():
+	print(_("Updating packages…"))
+	os.system(f"sudo dnf update -y > /dev/null 2>&1")
+
+def update():
+	if yesno(_("Update packages?"), True):
+		return do_update
+
+actions.append(update)
