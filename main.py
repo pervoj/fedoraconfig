@@ -66,3 +66,4 @@ import run_actions
 
 print(_("Everything is done!"))
 print(_("Thanks for using this script!"))
+print()
