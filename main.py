@@ -1,5 +1,5 @@
 from gettext import gettext as _
-from config import VERSION
+from config import VERSIONS
 from functions import clear
 import colors
 import questions
@@ -27,8 +27,8 @@ with open("/etc/os-release", "r", encoding = "utf-8") as f:
 if distro != "fedora":
 	print(_("Error: You are not on Fedora or your system is broken!"))
 	exit(1)
-if version != VERSION:
-	print(_(f"Error: This script is made for Fedora {VERSION}!"))
+if version not in VERSIONS:
+	print(_(f"Error: This script is made for Fedora versions {', '.join(VERSIONS)}!"))
 	exit(1)
 
 

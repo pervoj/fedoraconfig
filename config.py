@@ -1,7 +1,7 @@
 import pathlib
 
 # supported Fedora version
-VERSION = "36"
+VERSIONS = ["36"]
 
 # GetText text domain
 GETTEXT_PACKAGE = "fedoraconfig"
