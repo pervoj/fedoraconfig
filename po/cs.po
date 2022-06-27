@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedoraconfig\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-26 19:42+0200\n"
-"PO-Revision-Date: 2022-06-26 19:43+0200\n"
+"POT-Creation-Date: 2022-06-27 21:57+0200\n"
+"PO-Revision-Date: 2022-06-27 22:00+0200\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -34,9 +34,9 @@ msgid "Error: You are not on Fedora or your system is broken!"
 msgstr "Chyba: Nejste na Fedoře, nebo je váš systém rozbitý!"
 
 #: main.py:31
-#, python-brace-format
-msgid "Error: This script is made for Fedora {VERSION}!"
-msgstr "Chyba: Tento script je vytvořený pro Fedoru {VERSION}!"
+msgid "Error: This script is made for Fedora versions {', '.join(VERSIONS)}!"
+msgstr ""
+"Chyba: Tento script je vytvořený pro verze Fedory {', '.join(VERSIONS)}!"
 
 #: main.py:40
 msgid "This program needs sudo privileges."
@@ -117,25 +117,54 @@ msgstr ""
 msgid "Now wait a while until everything is ready."
 msgstr "Nyní chvíli počkejte, než bude vše hotové."
 
-#: action_parts/repositories.py:9
+#: action_parts/repositories.py:10
 msgid "Adding Flathub repository…"
 msgstr "Přidává se repozitář Flathub…"
 
-#: action_parts/repositories.py:13
+#: action_parts/repositories.py:14
 msgid "Add Flathub repository to be able to download more apps?"
 msgstr "Přidat repozitář Flathub, aby bylo možné stahovat více aplikací?"
 
-#: action_parts/repositories.py:20
+#: action_parts/repositories.py:21
 msgid "Adding RPM Fusion repository…"
 msgstr "Přidává se repozitář RPM Fusion…"
 
-#: action_parts/repositories.py:26
+#: action_parts/repositories.py:27
 msgid "Add RPM Fusion repository to be able to download more apps?"
 msgstr "Přidat repozitář RPM Fusion, aby bylo možné stahovat více aplikací?"
 
-#: action_parts/repositories.py:27
+#: action_parts/repositories.py:28
 msgid "Are you fine with non-free apps?"
 msgstr "Jste v pořádku s nesvobodnými aplikacemi?"
+
+#: action_parts/drivers.py:16
+msgid "Installing NVIDIA drivers…"
+msgstr "Instalují se ovladače NVIDIA…"
+
+#. try to keep the text width under 80
+#: action_parts/drivers.py:21
+msgid ""
+"This option is important if your computer contains an NVIDIA graphics card. "
+"In\n"
+"this case, select yes."
+msgstr ""
+"Tato možnost je důležitá, pokud váš počítač obsahuje grafickou kartu "
+"NVIDIA.\n"
+"V takovém případě vyberte možnost ano."
+
+#: action_parts/drivers.py:25
+msgid "Install NVIDIA GPU drivers?"
+msgstr "Nainstalovat ovladače grafických karet NVIDIA?"
+
+#. try to keep the text width under 80
+#: action_parts/drivers.py:29
+msgid "This option requires added RPM Fusion repositories."
+msgstr "Tato možnost vyžaduje přidání repozitářů RPM Fusion."
+
+#: action_parts/drivers.py:32
+msgid "Add RPM Fusion repositories and install NVIDIA GPU drivers?"
+msgstr ""
+"Přidat repozitáře RPM Fusion a nainstalovat ovladače grafických karet NVIDIA?"
 
 #: action_parts/dnf.py:9
 msgid "Enabling more parallel downloads…"

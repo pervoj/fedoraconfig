@@ -2,5 +2,6 @@ main.py
 questions.py
 run_actions.py
 action_parts/repositories.py
+action_parts/drivers.py
 action_parts/dnf.py
 action_parts/installs.py
