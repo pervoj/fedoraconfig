@@ -1,6 +1,7 @@
 from gettext import gettext as _
 import os
 from questions import yesno
+import status
 
 actions = []
 
@@ -25,6 +26,8 @@ def do_add_rpmfusion(nonfree):
 def add_rpmfusion():
 	if yesno(_("Add RPM Fusion repository to be able to download more apps?")):
 		nonfree = yesno(_("Are you fine with non-free apps?"))
+		status.rpmfusion = True
+		status.rpmfusion_nonfree = nonfree
 		return lambda: do_add_rpmfusion(nonfree)
 
 actions.append(add_rpmfusion)
