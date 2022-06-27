@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: fedoraconfig\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-27 21:57+0200\n"
-"PO-Revision-Date: 2022-06-27 22:00+0200\n"
+"PO-Revision-Date: 2022-06-27 22:04+0200\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -163,8 +163,7 @@ msgstr "Tato možnost vyžaduje přidání repozitářů RPM Fusion."
 
 #: action_parts/drivers.py:32
 msgid "Add RPM Fusion repositories and install NVIDIA GPU drivers?"
-msgstr ""
-"Přidat repozitáře RPM Fusion a nainstalovat ovladače grafických karet NVIDIA?"
+msgstr "Přidat repozitáře RPM Fusion a nainstalovat ovladače NVIDIA?"
 
 #: action_parts/dnf.py:9
 msgid "Enabling more parallel downloads…"
