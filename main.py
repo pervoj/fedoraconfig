@@ -67,3 +67,7 @@ import run_actions
 print(_("Everything is done!"))
 print(_("Thanks for using this script!"))
 print()
+print(colors.HEADER + _( # try to keep the text width under 80
+	"For all settings to work properly, please restart your computer."
+) + colors.ENDC)
+print()

@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fedoraconfig\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-27 21:57+0200\n"
-"PO-Revision-Date: 2022-06-27 22:04+0200\n"
+"POT-Creation-Date: 2022-06-27 22:19+0200\n"
+"PO-Revision-Date: 2022-06-27 22:19+0200\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -80,6 +80,11 @@ msgstr "Vše je hotovo!"
 #: main.py:68
 msgid "Thanks for using this script!"
 msgstr "Děkujeme za použití tohoto scriptu!"
+
+#. try to keep the text width under 80
+#: main.py:71
+msgid "For all settings to work properly, please restart your computer."
+msgstr "Aby všechna nastavení správně fungovala, restartujte počítač."
 
 #. letter to use as "YES" answer
 #: questions.py:5
