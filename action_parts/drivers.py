@@ -1,5 +1,6 @@
 from gettext import gettext as _
 import os
+import subprocess
 import colors
 from questions import yesno
 import status
@@ -7,6 +8,8 @@ from action_parts.repositories import do_add_rpmfusion
 
 actions = []
 
+
+has_nvidia = subprocess.getoutput("lspci | grep -i vga | grep -i nvidia").strip() != ""
 
 def do_nvidia_with_repositories():
 	do_add_rpmfusion(True)
@@ -17,12 +20,7 @@ def do_nvidia():
 	os.system("sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda > /dev/null 2>&1")
 
 def nvidia():
-	print(colors.HEADER + _( # try to keep the text width under 80
-		"This option is important if your computer contains an NVIDIA graphics card. In\n"+
-		"this case, select yes."
-	) + colors.ENDC)
-	print()
-	if yesno(_("Install NVIDIA GPU drivers?"), False):
+	if yesno(_("Install NVIDIA GPU drivers?")):
 		if not status.rpmfusion or not status.rpmfusion_nonfree:
 			print()
 			print(colors.HEADER + _( # try to keep the text width under 80
@@ -34,4 +32,4 @@ def nvidia():
 			else: return
 		else: return do_nvidia
 
-actions.append(nvidia)
+if has_nvidia: actions.append(nvidia)
