@@ -3,7 +3,7 @@
 # this is a runner script for the Fedora Config program
 
 # config
-script="https://github.com/pervoj/fedoraconfig/archive/main.zip"
+script="https://gitlab.com/pervoj/fedoraconfig/-/archive/main/fedoraconfig-main.zip"
 dir="/tmp/.fedoraconfigscripttmp"
 file="$dir/script.zip"
 extract="$dir/extract"
