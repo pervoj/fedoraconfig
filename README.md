@@ -4,6 +4,11 @@ This program targets mainly new Linux users. When you first install your Linux d
 
 This script will guide you through the whole configuration process on Fedora to make the system convenient for you. Every change is optional to make the configuration suit everyone.
 
+The script currently supports following Fedora releases:
+
+- Fedora 36
+- Fedora 37
+
 You can run the script with this one single command:
 
 ```sh
