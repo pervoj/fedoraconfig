@@ -7,5 +7,5 @@ This script will guide you through the whole configuration process on Fedora to 
 You can run the script with this one single command:
 
 ```sh
-wget -qO /tmp/fedoraconfigscript.sh https://gitlab.com/pervoj/fedoraconfig/-/raw/main/fedoraconfig.sh && bash /tmp/fedoraconfigscript.sh
+wget -qO /tmp/fedoraconfigscript.sh https://gitlab.com/pervoj/fedoraconfig/-/raw/v1.0.0/fedoraconfig.sh && bash /tmp/fedoraconfigscript.sh
 ```
